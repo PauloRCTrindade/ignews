@@ -7,9 +7,6 @@ export default function SingnInButton() {
 
   const { data: session,status } = useSession();
 
-  console.log(session);
-  console.log(status);
-
   return status === 'authenticated' ? (
     <button
       className={styles.singnInButton}
